@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Admin Registration - Easy Car Rental</title>
+</head>
+<body>
+<header>
+
+    <h1>🚗 EASY CAR RENTAL</h1>
+
+    <p><b>Admin Registration</b></p>
+
+    <hr>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="../login.html">Login</a> |
+        <a href="../about.html">About Us</a> |
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+</header>
+
+
+
+<main>
+
+    <h2>👨‍💼 Create Admin Account</h2>
+
+    <p>
+        Register as an administrator to manage the
+        Easy Car Rental Management System.
+    </p>
+
+    <p>
+        <b>Note:</b> Admin accounts are intended for authorized
+        system administrators only.
+    </p>
+
+    <br>
+
+
+   
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend><b>Personal Information</b></legend>
+
+            <br>
+
+            <label for="fullname">
+                Full Name:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter full name"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="email">
+                Email Address:
+            </label>
+
+            <br>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email address"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="phone">
+                Phone Number:
+            </label>
+
+            <br>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="address">
+                Address:
+            </label>
+
+            <br>
+
+            <textarea
+                id="address"
+                name="address"
+                rows="3"
+                cols="30"
+                placeholder="Enter address"
+            ></textarea>
+
+            <br><br>
+
+        </fieldset>
+
+
+        <br>
+
+
+        
+        <fieldset>
+
+            <legend><b>Administrator Information</b></legend>
+
+            <br>
+
+            <label for="adminid">
+                Admin ID / Employee ID:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="adminid"
+                name="adminid"
+                placeholder="Enter admin ID"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="department">
+                Department:
+            </label>
+
+            <br>
+
+            <select id="department" name="department" required>
+
+                <option value="">
+                    -- Select Department --
+                </option>
+
+                <option value="management">
+                    Management
+                </option>
+
+                <option value="operations">
+                    Operations
+                </option>
+
+                <option value="finance">
+                    Finance
+                </option>
+
+                <option value="customer-service">
+                    Customer Service
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <label for="position">
+                Position:
+            </label>
+
+            <br>
+
+            <select id="position" name="position" required>
+
+                <option value="">
+                    -- Select Position --
+                </option>
+
+                <option value="system-admin">
+                    System Administrator
+                </option>
+
+                <option value="manager">
+                    Rental Manager
+                </option>
+
+                <option value="admin-officer">
+                    Admin Officer
+                </option>
+
+            </select>
+
+            <br><br>
+
+        </fieldset>
+
+
+        <br>
+
+
+       
+        <fieldset>
+
+            <legend><b>Account Information</b></legend>
+
+            <br>
+
+            <label for="username">
+                Username:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Create username"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="password">
+                Password:
+            </label>
+
+            <br>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create password"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="confirm-password">
+                Confirm Password:
+            </label>
+
+            <br>
+
+            <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm password"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="security-code">
+                Admin Security Code:
+            </label>
+
+            <br>
+
+            <input
+                type="password"
+                id="security-code"
+                name="security-code"
+                placeholder="Enter security code"
+                required
+            >
+
+            <p>
+                <small>
+                    The security code will be verified by the
+                    system administrator in the backend.
+                </small>
+            </p>
+
+        </fieldset>
+
+
+        <br>
+
+
+      
+        <fieldset>
+
+            <legend><b>Confirmation</b></legend>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                required
+            >
+
+            <label for="agreement">
+                I confirm that I am an authorized administrator
+                and the information provided is correct.
+            </label>
+
+            <br><br>
+
+        </fieldset>
+
+
+        <br>
+
+
+      
+        <button type="submit">
+            ✅ Create Admin Account
+        </button>
+
+        <button type="reset">
+            Clear Form
+        </button>
+
+    </form>
+
+
+    <br>
+
+    <hr>
+
+
+   
+    <section>
+
+        <h3>Already Have an Account?</h3>
+
+        <p>
+            <a href="../login.html">
+                🔐 Login to Admin Account
+            </a>
+        </p>
+
+    </section>
+
+
+   
+    <section>
+
+        <h3>Register as Another User</h3>
+
+        <p>
+            <a href="customer-register.html">
+                👤 Customer Registration
+            </a>
+        </p>
+
+        <p>
+            <a href="driver-register.html">
+                👨‍✈️ Driver Registration
+            </a>
+        </p>
+
+        <p>
+            <a href="worker-register.html">
+                🔧 Worker Registration
+            </a>
+        </p>
+
+    </section>
+
+
+    <hr>
+
+    <p>
+        <a href="../index.html">
+            ← Back to Home
+        </a>
+    </p>
+
+</main>
+
+
+
+<hr>
+
+<footer>
+
+    <h3>Easy Car Rental</h3>
+
+    <p>
+        Your Journey, Our Responsibility
+    </p>
+
+    <p>
+        📞 Phone: +880 1XXXXXXXXX
+        <br>
+        📧 Email: info@easycarrental.com
+        <br>
+        📍 Dhaka, Bangladesh
+    </p>
+
+    <p>
+        <a href="../index.html">Home</a> |
+        <a href="../login.html">Login</a> |
+        <a href="../contact.html">Contact</a>
+    </p>
+
+    <p>
+        <b>© 2026 Easy Car Rental. All Rights Reserved.</b>
+    </p>
+
+</footer>
+
+</body>
+</html>
