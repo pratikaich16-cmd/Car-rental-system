@@ -1,0 +1,330 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2.6;
+    color: #30443b;
+    background-color: #f7f5ed;
+}
+
+
+header {
+    padding: 30px 16px;
+    background-color: #164e45;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    color: #dcefe7;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #123b35;
+    text-align: center;
+   
+}
+
+nav a {
+    display: inline-block;
+    padding: 13px 17px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,    
+nav a:focus {
+    background-color: #dcefe7;
+    color: #164e45;
+}
+
+
+main {
+    max-width: 1120px;
+    margin: 35px auto;
+    padding: 0 18px;
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #e1e8df;
+    border-radius: 16px;
+    
+}
+
+
+h2 {
+    margin-top: 0;
+    color: #164e45;
+    text-align: center;
+}
+
+h3 {
+    color: #246b5b;
+}
+
+
+p {
+    color: #52645a;
+}
+
+
+.hero {
+    padding: 45px 28px;
+    background-color: #e5f1e9;
+    border-left: 6px solid #b56b35;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+
+.button,
+.secondary-button {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 12px 22px;
+    border: 2px solid #164e45;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button {
+    background-color: #164e45;
+    color: white;
+}
+
+.button:hover {
+    background-color: #246b5b;
+    color: white;
+}
+
+.secondary-button {
+    background-color: white;
+    color: #164e45;
+}
+
+.secondary-button:hover {
+    background-color: #dcefe7;
+    color: #123b35;
+}
+
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    flex: 1 1 220px;
+    padding: 22px;
+    background-color: #f7faf6;
+    border: 1px solid #dce8df;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(22, 78, 69, 0.12);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+
+.section-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-description {
+    text-align: center;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 13px;
+    border: 1px solid #dce8df;
+    text-align: left;
+}
+
+th {
+    background-color: #164e45;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f7f2;
+}
+
+tbody tr:hover {
+    background-color: #e5f1e9;
+}
+
+
+a {
+    color: #246b5b;
+}
+
+a:hover {
+    color: #b56b35;
+}
+
+
+a.button,
+a.secondary-button {
+    text-decoration: none;
+}
+
+
+.why-us {
+    background-color: #eaf3e9;
+    border-left: 5px solid #246b5b;
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+.small-title {
+    color: #b56b35;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.final-section {
+    background-color: #164e45;
+    color: white;
+    text-align: center;
+}
+
+.final-section h2,
+.final-section h3,
+.final-section p {
+    color: white;
+}
+
+.final-section .button {
+    background-color: #b56b35;
+    border-color: #b56b35;
+    color: white;
+}
+
+.final-section .button:hover {
+    background-color: #965329;
+}
+
+
+footer {
+    margin-top: 40px;
+    padding: 25px 16px;
+    background-color: #123b35;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: #dcefe7;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #f0c49f;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 24px 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    main {
+        margin: 22px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 28px 18px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .service-card {
+        flex-basis: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
