@@ -1,201 +1,180 @@
 
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 16px;
+    background: linear-gradient(to bottom, rgb(234, 242, 250), rgb(247, 249, 252));
+    color: rgb(36, 59, 83);
     line-height: 1.6;
-    color: #243247;
-    background: linear-gradient(135deg, #eaf2fa, #f7f9fc);
 }
 
-
 header {
-    padding: 24px 16px;
-    background-color: #102a43;
-    color: white;
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
     text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
-    margin: 0;
-    letter-spacing: 1px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
 }
 
 header p {
-    margin: 6px 0 0;
-    color: #d8e6f3;
+    margin-top: 8px;
+    color: rgb(217, 234, 247);
 }
 
-
 nav {
+    background: rgb(24, 63, 99);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
     position: sticky;
     top: 0;
-    z-index: 5;
-    background-color: #183f63;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(16, 42, 67, 0.15);
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
-    display: inline-block;
-    padding: 13px 17px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: background-color 0.3s;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-nav a:hover,
-nav a:focus {
-    background-color: #d9eaf7;
-    color: #102a43;
+nav a:hover {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
 }
 
-
+nav a[href="admin-register.html"],
 nav a.active {
-    background-color: #102a43;
-    color: white;
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
 }
-
 
 main {
-    max-width: 680px;
-    margin: 38px auto;
-    padding: 0 18px;
+    max-width: 850px;
+    width: 92%;
+    margin: 30px auto;
 }
 
+.registration-card,
+main > form,
+main > section {
+    background: rgb(255, 255, 255);
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(217, 226, 236);
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(16, 42, 67, 0.1);
+}
 
 .registration-card {
-    padding: 28px;
-    background-color: white;
-    border: 1px solid #dce6ef;
-    border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(16, 42, 67, 0.12);
+    position: relative;
 }
-
 
 h2 {
-    margin-top: 0;
-    color: #123b5d;
+    color: rgb(16, 42, 67);
     text-align: center;
+    margin-bottom: 22px;
 }
 
-h3 {
-    color: #123b5d;
+fieldset {
+    border: 1px solid rgb(188, 204, 220);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 22px;
 }
 
-
-p {
-    color: #4c5d70;
+legend {
+    color: rgb(24, 63, 99);
+    font-weight: bold;
+    padding: 0 8px;
 }
-
-form p {
-    margin: 15px 0;
-}
-
 
 label {
     display: block;
-    margin-bottom: 6px;
-    color: #243b53;
+    margin: 12px 0 6px;
     font-weight: 600;
 }
 
-
-input[type="email"],
-input[type="text"],
-input[type="password"],
-input[type="tel"],
+input,
 select,
 textarea {
-    display: block;
     width: 100%;
-    padding: 12px 13px;
-    border: 1px solid #c6d3df;
-    border-radius: 7px;
-    background-color: #fbfdff;
-    color: #243247;
-    font: inherit;
+    padding: 11px;
+    border: 1px solid rgb(188, 204, 220);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: rgb(251, 253, 255);
 }
-
 
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #1769aa;
-    outline: 3px solid rgba(23, 105, 170, 0.15);
+    outline: none;
+    border-color: rgb(38, 128, 185);
+    box-shadow: 0 0 5px rgba(38, 128, 185, 0.3);
 }
 
-
-fieldset {
-    margin: 0;
-    padding: 20px;
-    border: 1px solid #dce6ef;
-    border-radius: 9px;
+#fullname,
+#email,
+#phone,
+#address,
+#adminid,
+#department,
+#position,
+#username,
+#password,
+#confirm-password,
+#security-code {
+    color: rgb(36, 59, 83);
 }
 
-
-legend {
-    padding: 0 8px;
-    color: #123b5d;
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
 }
 
+#agreement + label {
+    display: inline;
+    font-weight: normal;
+}
 
 button,
 input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-    display: inline-block;
-    margin: 6px 5px 6px 0;
-    padding: 11px 20px;
+input[type="reset"] {
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
     border: none;
-    border-radius: 7px;
-    background-color: #1769aa;
-    color: white;
-    font: inherit;
-    font-weight: 600;
+    padding: 11px 22px;
+    margin: 10px 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.25s, transform 0.25s;
+    transition: 0.3s;
 }
-
 
 button:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-    background-color: #0d4d80;
-    transform: translateY(-1px);
-}
-
-
-input[type="reset"] {
-    background-color: #68798a;
-}
-
 input[type="reset"]:hover {
-    background-color: #465665;
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+    transform: translateY(-2px);
 }
 
-
-a {
-    color: #1266a8;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #d05a24;
-    text-decoration: underline;
-}
-
-
-.table-container {
-    width: 100%;
-    overflow-x: auto;
+.center {
+    text-align: center;
 }
 
 table {
@@ -204,70 +183,77 @@ table {
     margin: 20px 0;
 }
 
+th {
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
+}
+
 th,
 td {
     padding: 12px;
-    border: 1px solid #dce6ef;
-    text-align: left;
-}
-
-th {
-    background-color: #183f63;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f1f6fb;
-}
-
-
-footer {
-    margin-top: 35px;
-    padding: 20px;
-    background-color: #102a43;
-    color: #e7f0f8;
+    border: 1px solid rgb(217, 226, 236);
     text-align: center;
 }
 
-footer h3 {
-    color: white;
+tr:nth-child(even) {
+    background: rgb(243, 248, 252);
 }
 
-footer p {
-    color: #e7f0f8;
+a {
+    color: rgb(24, 63, 99);
+}
+
+a:hover {
+    color: rgb(38, 128, 185);
+}
+
+.admin-help {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 50;
+}
+
+footer {
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
 }
 
 footer a {
-    color: #e7f0f8;
+    color: rgb(158, 213, 250);
+    text-decoration: none;
 }
-
-footer a:hover {
-    color: #d9eaf7;
-}
-
 
 @media (max-width: 600px) {
-    main {
-        margin: 22px auto;
-        padding: 0 12px;
+    header h1 {
+        font-size: 23px;
     }
 
-    .registration-card {
-        padding: 20px;
-    }
-
-    fieldset {
-        padding: 14px;
+    nav {
+        gap: 5px;
     }
 
     nav a {
-        padding: 10px;
+        padding: 8px 10px;
+        font-size: 14px;
     }
 
-    button,
-    input[type="submit"],
-    input[type="reset"] {
-        padding: 10px 14px;
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .registration-card,
+    main > form,
+    main > section {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 12px;
     }
 
     th,
