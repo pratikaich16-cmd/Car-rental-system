@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style-home.css">
 </head>
 
-<body>
+<body id="top">
 
 <header>
     <h1>🚗 EASY CAR RENTAL</h1>
@@ -16,10 +16,10 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a> |
-    <a href="cars.html">Available Cars</a> |
-    <a href="about.html">About Us</a> |
-    <a href="contact.html">Contact</a> |
+    <a href="index.html" class="active">Home</a>
+    <a href="cars.html">Available Cars</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
     <a href="login.html">Login</a>
 </nav>
 
@@ -44,13 +44,12 @@
                 🚘 Explore Available Cars
             </a>
 
-            <a class="secondary-button" href="login.html">
+            <a class="button secondary-button" href="login.html">
                 Login to Your Account
             </a>
         </p>
     </section>
 
-   
     <section>
         <h2 class="section-title">Our Services</h2>
 
@@ -83,7 +82,6 @@
         </div>
     </section>
 
-   
     <section>
         <h2 class="section-title">Featured Cars</h2>
 
@@ -131,21 +129,28 @@
         </p>
     </section>
 
-    
-    <section class="why-us">
+    <section>
         <h2 class="section-title">Why Choose Easy Car Rental?</h2>
 
-        <ul>
-            <li>✔ Affordable rental prices</li>
-            <li>✔ Well-maintained vehicles</li>
-            <li>✔ Professional drivers</li>
-            <li>✔ Easy booking process</li>
-            <li>✔ Reliable customer service</li>
-            <li>✔ Safe and comfortable journeys</li>
-        </ul>
+        <div class="why-us">
+            <div>
+                <ul>
+                    <li>✔ Affordable rental prices</li>
+                    <li>✔ Well-maintained vehicles</li>
+                    <li>✔ Professional drivers</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>✔ Easy booking process</li>
+                    <li>✔ Reliable customer service</li>
+                    <li>✔ Safe and comfortable journeys</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-   
     <section>
         <h2 class="section-title">Join Easy Car Rental</h2>
 
@@ -188,7 +193,6 @@
         </div>
     </section>
 
-    
     <section>
         <h2 class="section-title">How It Works</h2>
 
@@ -202,7 +206,6 @@
         </ol>
     </section>
 
-   
     <section class="final-section">
         <h2>Ready to Start Your Journey?</h2>
 
@@ -224,7 +227,6 @@
     </section>
 
 </main>
-
 
 <footer>
     <h3>Easy Car Rental</h3>
@@ -248,6 +250,8 @@
         <b>© 2026 Easy Car Rental. All Rights Reserved.</b>
     </p>
 </footer>
+
+<a href="#top" class="button back-to-top">↑ Top</a>
 
 </body>
 </html>
