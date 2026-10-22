@@ -5,20 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Login - Easy Car Rental</title>
-
     <link rel="stylesheet" href="style-login.css">
 </head>
 
-<body>
+<body id="top">
 
-    
     <header>
         <h1>🚗 EASY CAR RENTAL</h1>
         <p><b>Your Journey, Our Responsibility</b></p>
     </header>
-
 
     <nav>
         <a href="index.html">Home</a>
@@ -28,10 +24,8 @@
         <a href="login.html" class="active">Login</a>
     </nav>
 
-   
     <main>
 
-     
         <section class="login-card">
 
             <h2>🔐 Login to Your Account</h2>
@@ -44,7 +38,7 @@
             <form action="#" method="post">
 
                 <fieldset>
-                    <legend><b>Account Login</b></legend>
+                    <legend>Account Login</legend>
 
                     <p>
                         <label for="email">Email Address:</label>
@@ -70,7 +64,6 @@
 
                     <p>
                         <label for="role">Select Your Role:</label>
-
                         <select id="role" name="role" required>
                             <option value="">-- Select Role --</option>
                             <option value="admin">Admin</option>
@@ -80,21 +73,21 @@
                         </select>
                     </p>
 
-                    <div class="button-group">
+                    <div class="button-group center">
                         <button type="submit">🔓 Login</button>
                         <button type="reset" class="reset-button">Clear</button>
                     </div>
 
-                    <p class="forgot-link">
+                    <p class="forgot-link center">
                         <a href="#">Forgot Password?</a>
                     </p>
 
                 </fieldset>
 
             </form>
+
         </section>
 
-       
         <section class="registration-card">
 
             <h2>New to Easy Car Rental?</h2>
@@ -159,7 +152,6 @@
 
         </section>
 
-       
         <section class="security-card">
 
             <h2>🔒 Secure Access</h2>
@@ -174,13 +166,15 @@
                 according to their assigned role.
             </p>
 
-            <p class="back-link">
+            <p class="back-link center">
                 <a href="index.html">← Back to Home</a>
             </p>
 
         </section>
 
     </main>
+
+    <a href="#top" class="login-help">↑ Top</a>
 
     <footer>
 
