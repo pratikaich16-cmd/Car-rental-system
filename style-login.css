@@ -133,10 +133,6 @@ textarea:focus {
     color: rgb(53, 43, 72);
 }
 
-input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
-}
 
 button,
 input[type="submit"],
@@ -190,32 +186,3 @@ footer a {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 23px;
-    }
-
-    nav {
-        gap: 5px;
-    }
-
-    nav a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
-    main {
-        width: 95%;
-        margin: 20px auto;
-    }
-
-    .login-card,
-    main > form,
-    main > section {
-        padding: 20px;
-    }
-
-    fieldset {
-        padding: 12px;
-    }
-}
