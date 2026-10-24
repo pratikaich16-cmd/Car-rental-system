@@ -1,280 +1,206 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Easy Car Rental</title>
+    <link rel="stylesheet" href="style-login.css">
 </head>
-<body>
-<header>
 
-    <h1>🚗 EASY CAR RENTAL</h1>
+<body id="top">
 
-    <p><b>Your Journey, Our Responsibility</b></p>
-
-    <hr>
+    <header>
+        <h1>🚗 EASY CAR RENTAL</h1>
+        <p><b>Your Journey, Our Responsibility</b></p>
+    </header>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="cars.html">Available Cars</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="login.html"><b>Login</b></a>
+        <a href="index.html">Home</a>
+        <a href="cars.html">Available Cars</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="active">Login</a>
     </nav>
 
-    <hr>
+    <main>
 
-</header>
+        <section class="login-card">
 
+            <h2>🔐 Login to Your Account</h2>
 
+            <p class="intro-text">
+                Welcome back to <b>Easy Car Rental</b>.
+                Please enter your account information to continue.
+            </p>
 
-<main>
+            <form action="#" method="post">
 
-    <h2>🔐 Login to Your Account</h2>
+                <fieldset>
+                    <legend>Account Login</legend>
 
-    <p>
-        Welcome back to <b>Easy Car Rental</b>.
-        Please enter your account information to continue.
-    </p>
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </p>
 
-    <br>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </p>
 
-   
-    <form action="#" method="post">
+                    <p>
+                        <label for="role">Select Your Role:</label>
+                        <select id="role" name="role" required>
+                            <option value="">-- Select Role --</option>
+                            <option value="admin">Admin</option>
+                            <option value="customer">Customer</option>
+                            <option value="driver">Driver</option>
+                            <option value="worker">Worker</option>
+                        </select>
+                    </p>
 
-        <fieldset>
+                    <div class="button-group center">
+                        <button type="submit">🔓 Login</button>
+                        <button type="reset" class="reset-button">Clear</button>
+                    </div>
 
-            <legend><b>Account Login</b></legend>
+                    <p class="forgot-link center">
+                        <a href="#">Forgot Password?</a>
+                    </p>
 
-            <br>
+                </fieldset>
 
-            <label for="email">
-                <b>Email Address:</b>
-            </label>
+            </form>
 
-            <br>
+        </section>
 
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-            >
+        <section class="registration-card">
 
-            <br><br>
+            <h2>New to Easy Car Rental?</h2>
 
+            <p class="intro-text">
+                Create an account according to your role.
+            </p>
 
-            <label for="password">
-                <b>Password:</b>
-            </label>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User Type</th>
+                            <th>Purpose</th>
+                            <th>Registration</th>
+                        </tr>
+                    </thead>
 
-            <br>
+                    <tbody>
+                        <tr>
+                            <td>👤 Customer</td>
+                            <td>Rent and book vehicles</td>
+                            <td>
+                                <a href="customer-register.html">
+                                    Register as Customer
+                                </a>
+                            </td>
+                        </tr>
 
-            <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Enter your password"
-                required
-            >
+                        <tr>
+                            <td>👨‍✈️ Driver</td>
+                            <td>Manage assigned trips</td>
+                            <td>
+                                <a href="driver-register.html">
+                                    Register as Driver
+                                </a>
+                            </td>
+                        </tr>
 
-            <br><br>
+                        <tr>
+                            <td>🔧 Worker</td>
+                            <td>Inspect and maintain vehicles</td>
+                            <td>
+                                <a href="worker-register.html">
+                                    Register as Worker
+                                </a>
+                            </td>
+                        </tr>
 
+                        <tr>
+                            <td>👨‍💼 Admin</td>
+                            <td>Manage the complete system</td>
+                            <td>
+                                <a href="admin-register.html">
+                                    Admin Registration
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <label for="role">
-                <b>Select Your Role:</b>
-            </label>
+        </section>
 
-            <br>
+        <section class="security-card">
 
-            <select id="role" name="role" required>
+            <h2>🔒 Secure Access</h2>
 
-                <option value="">-- Select Role --</option>
+            <p>
+                Your account information is protected.
+                Please do not share your password with anyone.
+            </p>
 
-                <option value="admin">
-                    Admin
-                </option>
+            <p>
+                Each user will have access to features
+                according to their assigned role.
+            </p>
 
-                <option value="customer">
-                    Customer
-                </option>
+            <p class="back-link center">
+                <a href="index.html">← Back to Home</a>
+            </p>
 
-                <option value="driver">
-                    Driver
-                </option>
+        </section>
 
-                <option value="worker">
-                    Worker
-                </option>
+    </main>
 
-            </select>
+    <a href="#top" class="login-help">↑ Top</a>
 
-            <br><br>
+    <footer>
 
-            <button type="submit">
-                🔓 Login
-            </button>
+        <h3>Easy Car Rental</h3>
 
-            <button type="reset">
-                Clear
-            </button>
-
-            <br><br>
-
-            <a href="#">
-                Forgot Password?
-            </a>
-
-            <br><br>
-
-        </fieldset>
-
-    </form>
-
-    <br>
-
-
-
-    <section>
-
-        <h2>New to Easy Car Rental?</h2>
+        <p>Your Journey, Our Responsibility</p>
 
         <p>
-            Create an account according to your role.
+            📞 Phone: +880 1XXXXXXXXX
+            <br>
+            📧 Email: info@easycarrental.com
+            <br>
+            📍 Dhaka, Bangladesh
         </p>
 
-        <table border="1" cellpadding="10">
-
-            <tr>
-                <th>User Type</th>
-                <th>Purpose</th>
-                <th>Registration</th>
-            </tr>
-
-            <tr>
-                <td>👤 Customer</td>
-
-                <td>
-                    Rent and book vehicles
-                </td>
-
-                <td>
-                    <a href="customer-register.html">
-                        Register as Customer
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>👨‍✈️ Driver</td>
-
-                <td>
-                    Manage assigned trips
-                </td>
-
-                <td>
-                    <a href="driver-register.html">
-                        Register as Driver
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>🔧 Worker</td>
-
-                <td>
-                    Inspect and maintain vehicles
-                </td>
-
-                <td>
-                    <a href="worker-register.html">
-                        Register as Worker
-                    </a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>👨‍💼 Admin</td>
-
-                <td>
-                    Manage the complete system
-                </td>
-
-                <td>
-                    <a href="../Admin section/view/admin-register.html">
-                        Admin Registration
-                    </a>
-                </td>
-            </tr>
-
-        </table>
-
-    </section>
-
-    <br>
-
-    <hr>
-
-
-   
-    <section>
-
-        <h3>🔒 Secure Access</h3>
-
-        <p>
-            Your account information is protected.
-            Please do not share your password with anyone.
+        <p class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a>
         </p>
 
         <p>
-            Each user will have access to features
-            according to their assigned role.
+            <b>© 2026 Easy Car Rental. All Rights Reserved.</b>
         </p>
 
-    </section>
-
-    <hr>
-
-
-    
-    <p>
-        <a href="index.html">
-            ← Back to Home
-        </a>
-    </p>
-
-</main>
-
-
-
-<hr>
-
-<footer>
-
-    <h3>Easy Car Rental</h3>
-
-    <p>
-        Your Journey, Our Responsibility
-    </p>
-
-    <p>
-        📞 Phone: +880 1XXXXXXXXX
-        <br>
-        📧 Email: info@easycarrental.com
-        <br>
-        📍 Dhaka, Bangladesh
-    </p>
-
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact.html">Contact</a>
-    </p>
-
-    <p>
-        <b>© 2026 Easy Car Rental. All Rights Reserved.</b>
-    </p>
-
-</footer>
+    </footer>
 
 </body>
 </html>

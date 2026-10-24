@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(240, 234, 255), rgb(250, 248, 255));
+    color: rgb(53, 43, 72);
+    line-height: 1.6;
+}
+
+header {
+    background: rgb(53, 32, 79);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 28px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    margin-top: 8px;
+    color: rgb(229, 217, 245);
+}
+
+nav {
+    background: rgb(81, 53, 116);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgb(217, 198, 240);
+    color: rgb(53, 32, 79);
+}
+
+nav a[href="login.html"] {
+    background: rgb(217, 198, 240);
+    color: rgb(53, 32, 79);
+}
+
+main {
+    max-width: 620px;
+    width: 92%;
+    margin: 35px auto;
+}
+
+.login-card,
+main > form,
+main > section {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border: 1px solid rgb(224, 213, 240);
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(53, 32, 79, 0.12);
+}
+
+.login-card {
+    max-width: 520px;
+    margin: auto;
+    position: relative;
+}
+
+h2 {
+    color: rgb(53, 32, 79);
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+fieldset {
+    border: 1px solid rgb(217, 198, 240);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: rgb(81, 53, 116);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid rgb(200, 184, 220);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: rgb(253, 252, 255);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(128, 85, 181);
+    box-shadow: 0 0 5px rgba(128, 85, 181, 0.3);
+}
+
+#email,
+#password {
+    color: rgb(53, 43, 72);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: rgb(81, 53, 116);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 11px 22px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: rgb(128, 85, 181);
+    transform: translateY(-2px);
+}
+
+a {
+    color: rgb(104, 68, 154);
+}
+
+a:hover {
+    color: rgb(53, 32, 79);
+}
+
+.center {
+    text-align: center;
+}
+
+.login-help {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 50;
+}
+
+footer {
+    background: rgb(53, 32, 79);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: rgb(229, 217, 245);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .login-card,
+    main > form,
+    main > section {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+}

@@ -1,216 +1,200 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Car Rental - Home</title>
+    <link rel="stylesheet" href="style-home.css">
 </head>
-<body>
+
+<body id="top">
+
 <header>
-    <h1>🚗  EASY CAR RENTAL</h1>
+    <h1>🚗 EASY CAR RENTAL</h1>
     <p><b>Your Journey, Our Responsibility</b></p>
-
-    <hr>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="cars.html">Available Cars</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="login.html">Login</a>
-    </nav>
-
-    <hr>
 </header>
 
-
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="cars.html">Available Cars</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+</nav>
 
 <main>
 
-    <section>
+    <section class="hero">
         <h2>Welcome to Easy Car Rental</h2>
 
         <p>
             Find the perfect car for your journey with
-            <b>Easy Car Rental</b>.
-            We provide comfortable, reliable and affordable
-            car rental services for everyone.
+            <b>Easy Car Rental</b>. We provide comfortable,
+            reliable and affordable car rental services for everyone.
         </p>
 
         <p>
-            Whether you need a car for a short trip,
-            business purpose, family tour or special occasion,
-            we are here to help.
+            Whether you need a car for a short trip, business purpose,
+            family tour or special occasion, we are here to help.
         </p>
 
         <p>
-            <a href="cars.html"><b>🚘 Explore Available Cars</b></a>
-            &nbsp;&nbsp;
-            <a href="login.html"><b>Login to Your Account</b></a>
+            <a class="button" href="cars.html">
+                🚘 Explore Available Cars
+            </a>
+
+            <a class="button secondary-button" href="login.html">
+                Login to Your Account
+            </a>
         </p>
     </section>
 
-    <hr>
-
-
-   
     <section>
-        <h2>Our Services</h2>
+        <h2 class="section-title">Our Services</h2>
 
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-            </tr>
+        <p class="section-description">
+            We provide everything you need for a safe and comfortable journey.
+        </p>
 
-            <tr>
-                <td>🚗 Car Rental</td>
-                <td>Rent different types of cars at affordable prices.</td>
-            </tr>
+        <div class="service-container">
 
-            <tr>
-                <td>👨‍✈️ Driver Service</td>
-                <td>Get professional drivers for your journey.</td>
-            </tr>
+            <div class="service-card">
+                <h3>🚗 Car Rental</h3>
+                <p>Rent different types of cars at affordable prices.</p>
+            </div>
 
-            <tr>
-                <td>🔧 Vehicle Maintenance</td>
-                <td>Our workers inspect and maintain rental vehicles.</td>
-            </tr>
+            <div class="service-card">
+                <h3>👨‍✈️ Driver Service</h3>
+                <p>Get professional drivers for your journey.</p>
+            </div>
 
-            <tr>
-                <td>📅 Easy Booking</td>
-                <td>Book your preferred car easily and conveniently.</td>
-            </tr>
-        </table>
+            <div class="service-card">
+                <h3>🔧 Vehicle Maintenance</h3>
+                <p>Our workers inspect and maintain rental vehicles.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>📅 Easy Booking</h3>
+                <p>Book your preferred car easily and conveniently.</p>
+            </div>
+
+        </div>
     </section>
 
-    <hr>
-
-
-    
     <section>
-        <h2>Featured Cars</h2>
+        <h2 class="section-title">Featured Cars</h2>
 
-        <table border="1" cellpadding="10">
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Car</th>
+                    <th>Type</th>
+                    <th>Seats</th>
+                    <th>Price Per Day</th>
+                </tr>
 
-            <tr>
-                <th>Car</th>
-                <th>Type</th>
-                <th>Seats</th>
-                <th>Price Per Day</th>
-            </tr>
+                <tr>
+                    <td>Toyota Axio</td>
+                    <td>Sedan</td>
+                    <td>5</td>
+                    <td>৳ 3,000</td>
+                </tr>
 
-            <tr>
-                <td>Toyota Axio</td>
-                <td>Sedan</td>
-                <td>5</td>
-                <td>৳ 3,000</td>
-            </tr>
+                <tr>
+                    <td>Toyota Noah</td>
+                    <td>MPV</td>
+                    <td>7</td>
+                    <td>৳ 5,000</td>
+                </tr>
 
-            <tr>
-                <td>Toyota Noah</td>
-                <td>MPV</td>
-                <td>7</td>
-                <td>৳ 5,000</td>
-            </tr>
+                <tr>
+                    <td>Honda Vezel</td>
+                    <td>SUV</td>
+                    <td>5</td>
+                    <td>৳ 4,500</td>
+                </tr>
 
-            <tr>
-                <td>Honda Vezel</td>
-                <td>SUV</td>
-                <td>5</td>
-                <td>৳ 4,500</td>
-            </tr>
+                <tr>
+                    <td>Toyota Hiace</td>
+                    <td>Van</td>
+                    <td>12</td>
+                    <td>৳ 6,000</td>
+                </tr>
+            </table>
+        </div>
 
-            <tr>
-                <td>Toyota Hiace</td>
-                <td>Van</td>
-                <td>12</td>
-                <td>৳ 6,000</td>
-            </tr>
-
-        </table>
-
-        <p>
-            <a href="cars.html"><b>View All Cars →</b></a>
+        <p class="center">
+            <a class="button" href="cars.html">View All Cars →</a>
         </p>
     </section>
 
-    <hr>
-
-
-    
     <section>
-        <h2>Why Choose Easy Car Rental?</h2>
+        <h2 class="section-title">Why Choose Easy Car Rental?</h2>
 
-        <ul>
-            <li>✔ Affordable rental prices</li>
-            <li>✔ Well-maintained vehicles</li>
-            <li>✔ Professional drivers</li>
-            <li>✔ Easy booking process</li>
-            <li>✔ Reliable customer service</li>
-            <li>✔ Safe and comfortable journeys</li>
-        </ul>
+        <div class="why-us">
+            <div>
+                <ul>
+                    <li>✔ Affordable rental prices</li>
+                    <li>✔ Well-maintained vehicles</li>
+                    <li>✔ Professional drivers</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>✔ Easy booking process</li>
+                    <li>✔ Reliable customer service</li>
+                    <li>✔ Safe and comfortable journeys</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <hr>
-
-
-    
     <section>
-        <h2>Join Easy Car Rental</h2>
+        <h2 class="section-title">Join Easy Car Rental</h2>
 
-        <p>
+        <p class="section-description">
             Choose your account type and register with us.
         </p>
 
-        <table border="1" cellpadding="10">
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Main Responsibility</th>
+                    <th>Registration</th>
+                </tr>
 
-            <tr>
-                <th>User</th>
-                <th>Main Responsibility</th>
-                <th>Registration</th>
-            </tr>
+                <tr>
+                    <td>👨‍💼 Admin</td>
+                    <td>Manage the complete rental system</td>
+                    <td><a href="admin-register.html">Admin Registration</a></td>
+                </tr>
 
-            <tr>
-                <td>👨‍💼 Admin</td>
-                <td>Manage the complete rental system</td>
-                <td>
-                    <a href="../Admin section/view/admin-register.html">Admin Registration</a>
-                </td>
-            </tr>
+                <tr>
+                    <td>👤 Customer</td>
+                    <td>Rent and book vehicles</td>
+                    <td><a href="customer-register.html">Customer Registration</a></td>
+                </tr>
 
-            <tr>
-                <td>👤 Customer</td>
-                <td>Rent and book vehicles</td>
-                <td>
-                    <a href="../Customer section/view/customer-register.html">Customer Registration</a>
-                </td>
-            </tr>
+                <tr>
+                    <td>👨‍✈️ Driver</td>
+                    <td>Drive and manage assigned trips</td>
+                    <td><a href="driver-register.html">Driver Registration</a></td>
+                </tr>
 
-            <tr>
-                <td>👨‍✈️ Driver</td>
-                <td>Drive and manage assigned trips</td>
-                <td>
-                    <a href="driver-register.html">Driver Registration</a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>🔧 Worker</td>
-                <td>Inspect and maintain vehicles</td>
-                <td>
-                    <a href="worker-register.html">Worker Registration</a>
-                </td>
-            </tr>
-
-        </table>
+                <tr>
+                    <td>🔧 Worker</td>
+                    <td>Inspect and maintain vehicles</td>
+                    <td><a href="worker-register.html">Worker Registration</a></td>
+                </tr>
+            </table>
+        </div>
     </section>
 
-    <hr>
-
-
-  
     <section>
-        <h2>How It Works</h2>
+        <h2 class="section-title">How It Works</h2>
 
         <ol>
             <li>Create your account.</li>
@@ -222,11 +206,7 @@
         </ol>
     </section>
 
-    <hr>
-
-
-   
-    <section>
+    <section class="final-section">
         <h2>Ready to Start Your Journey?</h2>
 
         <p>
@@ -235,8 +215,8 @@
         </p>
 
         <p>
-            <a href="cars.html">
-                <b>🚗 VIEW AVAILABLE CARS</b>
+            <a class="button" href="cars.html">
+                🚗 VIEW AVAILABLE CARS
             </a>
         </p>
 
@@ -248,17 +228,10 @@
 
 </main>
 
-
-
-<hr>
-
 <footer>
-
     <h3>Easy Car Rental</h3>
 
-    <p>
-        Your Journey, Our Responsibility
-    </p>
+    <p>Your Journey, Our Responsibility</p>
 
     <p>
         <a href="index.html">Home</a> |
@@ -268,18 +241,17 @@
     </p>
 
     <p>
-        📞 Phone: +880 1XXXXXXXXX
-        <br>
-        📧 Email: info@easycarrental.com
-        <br>
+        📞 Phone: +880 1XXXXXXXXX<br>
+        📧 Email: info@easycarrental.com<br>
         📍 Dhaka, Bangladesh
     </p>
 
     <p>
         <b>© 2026 Easy Car Rental. All Rights Reserved.</b>
     </p>
-
 </footer>
+
+<a href="#top" class="button back-to-top">↑ Top</a>
 
 </body>
 </html>

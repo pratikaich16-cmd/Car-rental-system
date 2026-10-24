@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(234, 242, 250), rgb(247, 249, 252));
+    color: rgb(36, 59, 83);
+    line-height: 1.6;
+}
+
+header {
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    margin-top: 8px;
+    color: rgb(217, 234, 247);
+}
+
+nav {
+    background: rgb(24, 63, 99);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+}
+
+nav a[href="admin-register.html"],
+nav a.active {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+}
+
+main {
+    max-width: 850px;
+    width: 92%;
+    margin: 30px auto;
+}
+
+.registration-card,
+main > form,
+main > section {
+    background: rgb(255, 255, 255);
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(217, 226, 236);
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(16, 42, 67, 0.1);
+}
+
+.registration-card {
+    position: relative;
+}
+
+h2 {
+    color: rgb(16, 42, 67);
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+fieldset {
+    border: 1px solid rgb(188, 204, 220);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+legend {
+    color: rgb(24, 63, 99);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid rgb(188, 204, 220);
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: rgb(251, 253, 255);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: rgb(38, 128, 185);
+    box-shadow: 0 0 5px rgba(38, 128, 185, 0.3);
+}
+
+#fullname,
+#email,
+#phone,
+#address,
+#adminid,
+#department,
+#position,
+#username,
+#password,
+#confirm-password,
+#security-code {
+    color: rgb(36, 59, 83);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+#agreement + label {
+    display: inline;
+    font-weight: normal;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 11px 22px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+    transform: translateY(-2px);
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid rgb(217, 226, 236);
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: rgb(243, 248, 252);
+}
+
+a {
+    color: rgb(24, 63, 99);
+}
+
+a:hover {
+    color: rgb(38, 128, 185);
+}
+
+.admin-help {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 50;
+}
+
+footer {
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: rgb(158, 213, 250);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .registration-card,
+    main > form,
+    main > section {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

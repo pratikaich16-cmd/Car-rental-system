@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(234, 242, 250), rgb(247, 249, 252));
+    color: rgb(36, 59, 83);
+    line-height: 1.6;
+}
+
+header {
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+    color: rgb(217, 234, 247);
+}
+
+nav {
+    background: rgb(24, 63, 99);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+}
+
+nav a.active {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+}
+
+main {
+    max-width: 1120px;
+    width: 92%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(217, 226, 236);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(16, 42, 67, 0.08);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 55px 25px;
+    background: linear-gradient(135deg, rgb(217, 234, 247), rgb(255, 255, 255));
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(75, 156, 211, 0.12);
+    top: -70px;
+    right: -50px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: rgb(16, 42, 67);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.button {
+    display: inline-block;
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
+    padding: 11px 22px;
+    margin: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: rgb(75, 156, 211);
+    color: rgb(16, 42, 67);
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background: rgb(234, 242, 250);
+    color: rgb(24, 63, 99);
+    border: 1px solid rgb(24, 63, 99);
+}
+
+.section-title {
+    color: rgb(16, 42, 67);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1 1 220px;
+    max-width: 320px;
+    padding: 22px;
+    text-align: center;
+    background: rgb(243, 248, 252);
+    border: 1px solid rgb(217, 226, 236);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(16, 42, 67, 0.15);
+}
+
+.service-card h3 {
+    color: rgb(24, 63, 99);
+    margin-bottom: 10px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgb(255, 255, 255);
+}
+
+th {
+    background: rgb(24, 63, 99);
+    color: rgb(255, 255, 255);
+}
+
+th,
+td {
+    padding: 13px;
+    border: 1px solid rgb(217, 226, 236);
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: rgb(243, 248, 252);
+}
+
+.why-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.why-us div {
+    flex: 1 1 220px;
+    padding: 18px;
+    background: rgb(243, 248, 252);
+    border-radius: 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+.small-title {
+    color: rgb(24, 63, 99);
+    margin-bottom: 10px;
+}
+
+.final-section {
+    text-align: center;
+    background: rgb(217, 234, 247);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+}
+
+footer {
+    background: rgb(16, 42, 67);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+footer a {
+    color: rgb(158, 213, 250);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#fullname {
+    color: rgb(24, 63, 99);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+        margin: 18px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}
