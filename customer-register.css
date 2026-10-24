@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: lavenderblush;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: purple;
+}
+
+h1 {
+    color: deeppink;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
+    
+}
+
+.tagline {
+    color: purple;
+    text-align: center;
+}
+
+.form-box {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px pink;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label, input, textarea {
+    font-size: 15px;
+}
+
+label {
+    color: purple;
+}
+
+#fullname, #email, #phone, #dob,
+#address, #license, #nid, #username,
+#password, #confirm_password {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    background-color: lavenderblush;
+}
+
+#address {
+    overflow: auto;
+}
+
+.terms {
+    margin: 15px 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#submit, #reset {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+#submit {
+    background-color: deeppink;
+    color: white;
+}
+
+#reset {
+    background-color: lightpink;
+    color: purple;
+}
+
+#submit:hover {
+    background-color: purple;
+    
+}
+
+#reset:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+a {
+    color: deeppink;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
