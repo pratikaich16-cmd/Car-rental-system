@@ -226,38 +226,3 @@ footer a {
     color: rgb(158, 213, 250);
     text-decoration: none;
 }
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 23px;
-    }
-
-    nav {
-        gap: 5px;
-    }
-
-    nav a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
-    main {
-        width: 95%;
-        margin: 20px auto;
-    }
-
-    .registration-card,
-    main > form,
-    main > section {
-        padding: 18px;
-    }
-
-    fieldset {
-        padding: 12px;
-    }
-
-    th,
-    td {
-        padding: 8px;
-    }
-}

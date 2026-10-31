@@ -1,0 +1,126 @@
+.nevbar  {
+   background-color: rgb(125, 199, 125, 0.5);
+    color:black;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+     top:0px;
+    z-index: 1000;
+}
+
+.nevbar a:hover  {
+    color: rgb(250, 204, 21);
+}
+
+.nevbar a{
+   color:black;
+   margin-left:20px;
+   font-weight:bold;
+   text-decoration: none;
+   
+}
+
+body{
+  background-image:url("car-bg.jpg.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#centerbox {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.formgrid {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 30px;
+}
+
+label{
+font-family: "Times New Roman";
+font-size: 25px;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgb(224, 103, 103);
+}
+
+h1{
+  font-family:"Times New Roman";
+  font-weight:bold;
+  font-size:25px;
+  text-shadow: 2px 2px 4px rgb(169, 220, 125);
+}
+
+p{
+  font-family:"Times New Roman";
+  font-size:25px;
+  font-weight:bold;
+  text-shadow: 2px 2px 4px rgb(169,220,125);
+}
+
+#lasttext{
+ font-family:"Times New Roman";
+ color:rgb(245, 245, 220);
+  font-size:25px;
+  font-weight:bold;
+  text-shadow: 2px 2px 4px rgb(169,220,125);
+
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-left: 600px;
+
+}
+
+#submit, #reset {
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgb(195, 196, 198);
+}
+
+input:focus{
+  background-color : rgb(173, 216, 230);
+}
+
+
+textarea:focus{
+  background-color:rgb(173, 216, 230);
+}
+
+#submit{
+  background-color: rgb(52, 152, 219);
+  transition: background-color 0.3s ;
+}
+
+#submit:hover {
+   background-color: rgb(33, 150, 48);
+    color: rgb(31, 41, 55);
+
+}
+
+
+#reset{
+  background-color: rgb(201, 36, 36);
+  transition:background-color 0.3s;
+}
+
+#reset:hover{
+  background-color: rgb(205, 227, 39);
+}
+
+#link{
+  color: rgb(52, 152, 219);
+}
+
+
