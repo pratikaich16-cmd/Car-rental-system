@@ -12,6 +12,7 @@
 
 .nevbar a:hover  {
     color: rgb(250, 204, 21);
+    
 }
 
 .nevbar a{
@@ -82,7 +83,7 @@ p{
 
 }
 
-#submit, #reset {
+#submit, #resetBtn {
     padding: 10px 25px;
     font-size: 16px;
     border-radius: 8px;
@@ -92,7 +93,6 @@ p{
 input:focus{
   background-color : rgb(173, 216, 230);
 }
-
 
 textarea:focus{
   background-color:rgb(173, 216, 230);
@@ -109,13 +109,12 @@ textarea:focus{
 
 }
 
-
-#reset{
+#resetBtn{
   background-color: rgb(201, 36, 36);
   transition:background-color 0.3s;
 }
 
-#reset:hover{
+#resetBtn:hover{
   background-color: rgb(205, 227, 39);
 }
 
@@ -123,4 +122,22 @@ textarea:focus{
   color: rgb(52, 152, 219);
 }
 
+/* Math Verification Alignment */
+
+#mathVerification {
+    text-align: center;
+    margin: 15px auto;
+}
+
+#mathVerification h3,
+#mathVerification h2,
+#mathVerification p {
+    margin: 10px 0;
+}
+
+#answer {
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
