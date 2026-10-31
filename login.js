@@ -6,7 +6,7 @@ let loginMessage = document.getElementById("loginMessage");
 loginForm.addEventListener("submit", function(event) {
 
     let email = document.getElementById("email").value.trim();
-    let password = document.getElementById("password").value;//let is a variable which store user input and where the input are changeable
+    let password = document.getElementById("password").value;
     let role = document.getElementById("role").value;
 
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
