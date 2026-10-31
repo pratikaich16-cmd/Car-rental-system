@@ -1,88 +1,116 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Customer Registration - Easy Car Rental</title>
-</head>
-
-<body>
-
-    <h1 align="center"> EASY CAR RENTAL</h1>
-    <h2 align="center">Customer Registration Form</h2>
-
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Easy Car Rental - Customer Registration</title> 
+   
+    <link rel="stylesheet" href="./css/customer-register.css"> 
+</head> 
+ 
+<body> 
+ 
+    <h1>EASY CAR RENTAL</h1> 
+    <p class="tagline">Your Journey, Our Responsibility</p> 
+    <hr> 
+ 
+    <h2>Customer Registration Form</h2> 
+ 
     
-
-    <form action="" method="post">
-
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" required>
-        <br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required>
-        <br><br>
-
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob" required>
-        <br><br>
-
-        <label>Gender:</label><br>
-
-        <input type="radio" id="male" name="gender" value="Male" required>
-        <label for="male">Male</label>
-
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label>
-
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label>
-        <br><br>
-
-        <label for="address">Address:</label><br>
-        <textarea id="address" name="address" rows="4" cols="30" required></textarea>
-        <br><br>
-
-        <label for="license">Driving License:</label><br>
-        <input type="text" id="license" name="license" required>
-        <br><br>
-
-        <label for="nid">NID Number:</label><br>
-        <input type="text" id="nid" name="nid" required>
-        <br><br>
-
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required>
-        <br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required>
-        <br><br>
-
-        <label for="confirm_password">Confirm Password:</label><br>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-        <br><br>
-
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the Terms and Conditions.</label>
-        <br><br>
-
-        <button type="submit">Register</button>
-        <button type="reset">Reset</button>
-
-        <p>
-            Already have an account?
-            <a href="login.html">Login Here</a>
-        </p>
-
-        <a href="index.html">Back to Home</a>
-
-    </form>
-
-</body>
-
+    <form class="form-box" id="registerForm" action="" method="post" onsubmit="return myVal()" novalidate> 
+ 
+        <div class="form-group"> 
+            <label for="fullname">Full Name:</label> 
+            
+            <input type="text" id="fullname" name="fullname"> 
+            <p id="fullnameerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email"> 
+            <p id="emailerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="phone">Phone Number:</label> 
+            <input type="tel" id="phone" name="phone"> 
+            <p id="phoneerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob"> 
+            <p id="doberror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label>Gender:</label> 
+            <input type="radio" id="male" name="gender" value="Male"> 
+            <label for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="Female"> 
+            <label for="female">Female</label> 
+            <input type="radio" id="other" name="gender" value="Other"> 
+            <label for="other">Other</label> 
+            <p id="gendererror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="address">Address:</label> 
+            <textarea id="address" name="address" rows="3"></textarea> 
+            <p id="addresserror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="license">Driving License:</label> 
+            <input type="text" id="license" name="license"> 
+            <p id="licenseerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="nid">NID Number:</label> 
+            <input type="text" id="nid" name="nid"> 
+            <p id="niderror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username"> 
+            <p id="usernameerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password"> 
+            <p id="passworderror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="form-group"> 
+            <label for="confirm_password">Confirm Password:</label> 
+            <input type="password" id="confirm_password" name="confirm_password"> 
+            <p id="confirmerror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="terms"> 
+            <input type="checkbox" id="terms" name="terms"> 
+            <label for="terms">I agree to the terms and conditions.</label> 
+            <p id="termserror" style="color:red;"></p> 
+        </div> 
+ 
+        <div class="button-group"> 
+            <input type="submit" id="submit" value="Register"> 
+            <input type="reset" id="reset" value="Reset"> 
+        </div> 
+ 
+        <p id="success" style="color:green; font-weight:bold;"></p> 
+ 
+        <p class="links"> 
+            Already have an account? <a href="login.html">Login Here</a> <br> 
+            <a href="index.html">Back to Home</a> 
+        </p> 
+ 
+    </form> 
+ 
+   
+    <script src="./js/customer-register.js"></script> 
+ 
+</body> 
 </html>
-
