@@ -1,68 +1,125 @@
-<!DOCTYPE html>
-<head>
-    <title>Driver Registratio-Easy Car Rental</title>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driver Registration-Easy Car Rental</title>
+    <link rel="stylesheet" href="../../driver-register-css/style-driver-reg.css">
 </head>
 <body>
+
+<header class="nevbar">
     <h2>Easy Car Rental</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
-        </nav>
-        <hr>
+    <nav>
+        <a href="index.html">Home</a>
+        <a>|</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<div id="centerbox">
+
 <h1>Driver Registration</h1>
 <p>Join our team and become a part of Easy Car Rental</p>
 <hr>
 
-<form action=" " method="post">
+<form id="driverForm" action="" method="post">
 
-<Label for="name">Full Name :</Label><br>
-<input type="text" id="name" placeholder="Enter Your Full Name" required>
+<div class="formgrid">
+
+<div>
+
+    <label for="name">Full Name :</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" onkeyup="checkname()">
+     <p id="namemss">  </p>
+    <br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email address" onkeyup="emailcheck()">
+<p id="emailmss">  </p>
+    <br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" onkeyup="phnnumcheck()">
+
+    <br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter the address"></textarea>
+
+    <br><br>
+
+</div>
+
+<div>
+
+    <label for="dvli">Driving License Number :</label><br>
+    <input type="text" id="dvli" name="license" placeholder="Enter your driving license number">
+
+    <br><br>
+
+    <label for="expirydate">License Expiry Date :</label><br>
+    <input type="date" id="expirydate" name="expirydate">
+
+    <br><br>
+
+    <label for="expri">Driving Experience (Years):</label><br>
+
+    <select id="expri" name="experience">
+        <option value="">Select experience</option>
+        <option value="1-3y">1-3 Year</option>
+        <option value="3-7y">3-7 Year</option>
+        <option value="7-10y">7-10 Year</option>
+        <option value="10y">More than 10 Years</option>
+    </select>
+
+    <br><br>
+
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="password" placeholder="Create a strong Password" onkeyup="passcheck()">
+     <p id="passmss">  </p>
+     
+    <br><br>
+
+</div>
+
+</div>
+
+
+
+<div id="mathVerification">
+    <h3>Human Verification</h3>
+    <p>Solve this question to submit your registration:</p>
+    <h2 id="question"></h2>
+    <input type="number" id="answer" placeholder="Enter your answer">
+    <p id="message"></p>
+</div>
+
+
+
+<div class="button-group">
+
+    <input type="button" id="submit" value="Submit" onclick="verifyAnswer()">
+
+    <input type="reset" id="resetBtn" value="Reset" onclick="resetForm()">
+
+</div>
+
 <br><br>
 
-<label for="email">Email:</label><br>
-<input type="text" id="email" placeholder="Enter Your Email address" required>
-<br><br>
+<p>Already have an account?
+<a href="login.html" id="link">Login</a>
+</p>
 
-<label for="phone">Phone:</label><br>
-<input type="text" id="phone" placeholder="Enter your phone number" required>
-<br><br>
+<hr>
 
-<Label for="address">Address:</Label><br>
-<textarea id="address" rows="4" cols="30" placeholder="Enter the address" required></textarea><br><br>
- 
-<label for="dvli">Driving License Number :</label><br>
-<input type="text" id="dvli" placeholder="Enter your driving license number" required><br><br>
-
-<label for="expirydate">License Expiry Date :</label><br>
-<input type="date" id="expirydate" required>
-<br><br>
-
-<label for="expri">Driving Experience (Years):</label><br>
-<select id="expri" required>
-    <option value="">Select experience</option>
-    <option value="1-3y">1-3 Year</option>
-    <option value="3-7y">3-7 Year</option>
-    <option value="7-10y">7-10 Year</option>
-    <option value="10y">More than 10 Years</option>
-
-</select>
-<br> <br>
-
-<label for="pass">Password:</label><br>
-<input type="text" id="pass" placeholder="Create a strong Password " required>
-<br> <br>
-
-
-<button type="submit">Register</button>
- <button type="reset">Reset</button> 
- <br><br>
- 
- <p>Already have an account?<a href="login.html">Login</a> </p>
-
- <hr>
-
- <p>Easy Car Rental - Your Journey, Our Responsibility</p>
- <p>Contact us with Number : 01827911475</p>
 </form>
+
+</div>
+
+<p id="lasttext">Easy Car Rental - Your Journey, Our Responsibility</p>
+<p id="lasttext">Contact us with Number : 01827911475</p>
+
+<script src="../../driver-register-js/driver-register.js"></script>
+
 </body>
+</html>
