@@ -1,0 +1,130 @@
+/* ===== Element Selectors ===== */
+
+/* Body Design */
+body {
+    background-color: lightgray;
+    font-family: Arial;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Heading */
+h1 {
+    background-color: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Form Heading */
+h2 {
+    color: navy;
+    text-align: center;
+}
+
+/* Form Design */
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fieldset Design */
+fieldset {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Legend */
+legend {
+    color: navy;
+}
+
+/* Labels */
+label {
+    margin-bottom: 5px;
+}
+
+/* Text, Email, Phone and Password Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/* Address Field */
+textarea {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/* Car Type Dropdown */
+select {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Link Hover */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* ===== ID Selectors ===== */
+
+#address {
+    background-color: whitesmoke;
+}
+
+#car_type {
+    cursor: pointer;
+}
+
+
+/* ===== Class Selectors ===== */
+
+/* Register and Reset Buttons */
+.btn {
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.btn:hover {
+    background-color: blue;
+}
+
+/* Back to Home link */
+.home-link {
+    font-weight: bold;
+}
